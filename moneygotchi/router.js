@@ -5,7 +5,11 @@ const router = new Router()
 router.post('/', (req, res, next) => {
 
   MoneyGotchi.create({
-    name: req.body.name
+    name: req.body.name,
+    // userId: req.user.dataValues.id,
+    love: 4,
+    water: 4,
+    dollars: 4
   })
   .then(gotchi => {
     res.send(`Gotchi ${gotchi.name} created successfully` )
