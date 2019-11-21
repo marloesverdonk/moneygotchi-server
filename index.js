@@ -1,5 +1,4 @@
 const express = require('express')
-const bcrypt = require("bcrypt");
 
 //Middlewares
 const bodyParser = require('body-parser')
